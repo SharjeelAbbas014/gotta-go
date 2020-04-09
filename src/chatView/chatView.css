@@ -1,0 +1,67 @@
+#chatView {
+    width: 77%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.myMsg {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.myMsg div {
+    background-color: tomato;
+    max-width: 30%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 10px 20px;
+    color: #fff;
+}
+.otherMsg {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.otherMsg div {
+    background-color: rgb(163, 228, 219);
+    max-width: 30%;
+    padding: 10px 20px;
+
+    border-radius: 30px;
+    margin: 10px 20px;
+}
+#backDiv{
+    height: 10%;
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    background-color: #232323;
+}
+
+#backDiv img{
+    padding: 15px 0px 15px 40px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+#last {
+    margin-bottom: 100px;
+}
+@media only screen and (max-width: 1270px) {
+    #chatView {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .myMsg div {
+        max-width: 50%;
+    }
+    .otherMsg div {
+        max-width: 50%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #chatView {
+        width: 100%;
+    }
+}

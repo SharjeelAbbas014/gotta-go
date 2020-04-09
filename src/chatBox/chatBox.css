@@ -1,0 +1,48 @@
+#chatBox{  
+    width: 77%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0 0px 0 20px;
+    background-color: #232323;
+    height: 80px;
+}
+#chatBox input{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 85%;
+    color: rgb(255, 116, 139);
+}
+#chatBox button{
+    display: inline;
+    width: 100px;
+    height: 50px;
+    z-index: 100;
+    border-radius: 200px;
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    border: 0;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(to top right, #da8d00, #d41900);
+}
+@media only screen and (max-width: 1270px){
+    #chatBox{
+        width: 65%
+    }
+    #chatBox input{
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 850px) {
+    #chatBox{ 
+        width: 100%;
+    }
+    #chatBox input{
+        width: 65%;
+    }
+}
